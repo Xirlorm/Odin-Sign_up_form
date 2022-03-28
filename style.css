@@ -1,0 +1,121 @@
+
+body{
+    margin: 0;
+    display: flex;
+    --border-colors: #C5C7CB;
+}
+
+
+/*+++++++++ Header +++++++++*/
+header{
+    background: url("images/ryan-ancill-aJYO8JmVodY-unsplash.jpg") no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    width: 40%;
+    margin: 0;
+}
+
+header > div{
+    background: rgba(20, 20, 20, 0.6);
+    padding: 5px;
+    text-align: center;
+    margin-top: 68%;
+}
+
+/* Header text */
+header h1 {
+    display: inline;
+    position: relative;
+    bottom: 25px;
+    text-transform: uppercase;
+    font-family: "Dela Gothic One";
+    font-size: larger;
+}
+
+/* Header Logo and Text*/
+header img, header h1{
+    width: 60px;
+    height: 70px;
+    padding: 2px;
+    margin: 14px 0;
+}
+
+
+/*++++++++ Main content ++++++++*/
+main{
+    margin: 100px 0;
+    font-family: sans-serif;
+}
+
+/* Info section */
+main > section#info, main form #form-inputs > p {
+    margin: 25px;
+    font-weight: 500;
+}
+
+
+/*-------Form styling-------*/
+
+/*Input and label container*/
+#form-inputs{
+    box-shadow: 0 3px 6px #dddddd;
+    background-color: #F5F5F5;
+    margin: 40px 0 30px;
+    padding: 27px 25px;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+}
+
+label{
+    display: block;
+    font-family: sans-serif;
+    margin: 2px;
+    font-size: 15px;
+    color: #556;
+}
+
+li > input{
+    min-width: 235px;
+    max-width: 260px;
+    padding: 11px 4px;
+    border: 1px solid var(--border-colors);
+    border-radius: 6px;
+    background-color: #eeeeee;
+}
+
+li > input:focus {
+    border: 1px solid #43c;
+    outline: none;
+    box-shadow: 0 0 3px #43a;
+}
+
+input[type="email"]:focus:invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 3px red;
+    outline: 0;
+}
+
+/* Form submission container */
+#form-submit {
+    margin-left: 25px;
+}
+
+/* Submission button */
+input[type="submit"]{
+    padding: 12px 26px;
+    border: 1px solid var(--border-colors);
+    border-radius: 6px;
+    background-color: #596D48;
+    color: #ffffff;
+    font-size: medium;
+}
+
+#form-submit a{
+    text-decoration: none;
+    color: #596DC8;
+}
+

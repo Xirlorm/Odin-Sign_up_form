@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/odin-lined.png" alt="">
+            <h1>Odin</h1>
+        </div>
+    </header>
+    <main>
+        <section id="info">
+            <p>This is not real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.<br>
+            Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </section>
+        <form action="post">
+            <div id="form-inputs">
+                <p>Let's do this!</p>
+                <li>
+                    <label for="firstname">Firstname</label>
+                    <input id="firstname" type="text" name="firstname" required autofocus>
+                </li>
+                <li>
+                    <label for="lastname">Lastname</label>
+                    <input id="lastname" type="text" name="lastname">
+                </li><br>
+                <li>
+                    <label for="tel">Telephone</label>
+                    <input id="tel" type="tel" name="telephone" minlength="10">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                </li><br>
+                <li>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" required>
+                </li>
+                <li>
+                    <label for="password">Confirm password</label>
+                    <input id="password" type="password" name="password" required>
+                </li><br>
+            </div>
+            <div id="form-submit">
+                <input type="submit" value="Create Account">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
